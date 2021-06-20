@@ -1,0 +1,14 @@
+Four Python 3.8 installers are available for download - two each for the 32-bit and 64-bit versions of the interpreter. The web installer is a small initial download, and it will automatically download the required components as necessary. The offline installer includes the components necessary for a default installation and only requires an internet connection for optional features. See Installing Without Downloading for other ways to avoid downloading during installation.
+
+After starting the installer, one of two options may be selected:
+
+The launcher should have been associated with Python files (i.e. .py, .pyw, .pyc files) when it was installed. This means that when you double-click on one of 
+these files from Windows explorer the launcher will be used, and therefore you can use the same facilities described above to have the script specify the version which should be used.
+
+The key benefit of this is that a single launcher can support multiple Python versions at the same time depending on the contents of the first line.
+
+
+
+If the first line of a script file starts with #!, it is known as a “shebang” line. Linux and other Unix like operating systems have native support for such lines and they are commonly used on such systems to indicate how a script should be executed. This launcher allows the same facilities to be used with Python scripts on Windows and the examples above demonstrate their use.
+
+To allow shebang lines in Python scripts to be portable between Unix and Windows, this launcher supports a number of ‘virtual’ commands to specify which interpreter to use. The supported virtual commands are:
